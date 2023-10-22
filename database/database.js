@@ -5,6 +5,12 @@ import { postgres } from "../deps.js";
 const sql = postgres({});
 export { sql};
 
+if (Deno.env.get("DATABASE_URL")) {
+  sql = postgres(Deno.env.get("DATABASE_URL"));
+} else {
+  sql = postgres({});
+}
+
 
 const CONCURRENT_CONNECTIONS = 2;
 const connectionPool = new Pool({}, CONCURRENT_CONNECTIONS);
