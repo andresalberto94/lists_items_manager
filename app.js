@@ -17,7 +17,7 @@ const handleRequest = async (request) => {
     return await listsController.addList(request);
   } else if (url.pathname === "/lists" && request.method === "GET") {
     return await listsController.viewLists(request);
-  }else if (url.pathname.match("/lists/[0-9]+") && request.method === "POST") {
+  }else if (url.pathname.match("/lists/[0-9]+") && request.method === "GET") {
     return await listsController.viewList(request);
   }/* else if (url.pathname.match("/lists/[0-9]+") && request.method === "POST") {
     return await listsController.viewList(request);
