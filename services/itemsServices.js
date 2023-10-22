@@ -5,7 +5,7 @@ import { sql } from "../database/database.js";
 const createItem = async (listId, nameItem) => {
     await sql`INSERT INTO
       shopping_list_items (shopping_list_id, name)
-      VALUES (${listId}, ${nameItem})`;
+      VALUES (${listId}, ${nameItem, null})`;
   };
 
   const findItemsById = async (id) => {
