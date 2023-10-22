@@ -9,10 +9,11 @@
   h1>Statistics</h1>
   <br>
   <h4>Number of Lists: <%= num.count %></h4>
+  <% it.itemNUM.forEach(function(user){ %>
   <h4>Number of Items: <%= user.count %></h4>
+  <% }) %>
   <% } %>
 <% }) %>
-
 
 
 
