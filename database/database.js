@@ -11,7 +11,13 @@ if (Deno.env.get("DATABASE_URL")) {
 
 
 const CONCURRENT_CONNECTIONS = 2;
-const connectionPool = new Pool(sql, CONCURRENT_CONNECTIONS);
+const connectionPool = new Pool({
+  hostname: "artos_unique_wsd_deployment_iii",
+  database: "ru8s",
+  user: "ybY3r9Q8IRfTpmpQSHlquxeG0f7YShyG@dpg-ck9ut1ns0fgc73frcuk0-a/artos_unique_wsd_deployment_iii_database_ru8s",
+ 
+}, CONCURRENT_CONNECTIONS);
+
 
 const executeQuery = async (query, params) => {
   const response = {};
