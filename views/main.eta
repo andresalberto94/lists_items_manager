@@ -19,7 +19,6 @@
   <% } %>
 <% }) %>
 
-
-
+<br>
 
 <a href="/lists" class="container paper">Lists</a>
