@@ -26,7 +26,7 @@ const handleRequest = async (request) => {
   } else if (url.pathname.match("/lists/[0-9]+/items/[0-9]+/collect") && request.method === "POST") {
     return await itemsController.collected(request);
   } else if (url.pathname.match("/lists/[0-9]+/items") && request.method === "POST") {
-    return await itemsController.viewList(request);
+    return await listsController.viewList(request);
   } else {
     return new Response("Not found", { status: 404 });
   }
