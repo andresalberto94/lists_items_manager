@@ -10,10 +10,10 @@
   <br>
   <h4>Number of Lists: <%= num.count %></h4>
   <h4>Number of Items: <%= user.count %></h4>
-  <br>
-  <a href="/lists">Lists</a>
   <% } %>
 <% }) %>
 
 
 
+
+<a href="/lists">Lists</a>
