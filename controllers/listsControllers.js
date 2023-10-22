@@ -30,7 +30,6 @@ const addList = async (request) => {
   const viewLists = async (request) => {
     const data = {
       lists: await listService.findAllNonActiveList(),
-      list: await listService.findById(urlParts[2]),
     };
   
     return new Response(await renderFile("lists.eta", data), responseDetails);
