@@ -2,6 +2,9 @@
 import { postgres } from "../deps.js";
 import { Pool } from "https://deno.land/x/postgres@v0.17.0/mod.ts";
 
+const sql = postgres({});
+export { sql};
+
 const CONCURRENT_CONNECTIONS = 2;
 const connectionPool = new Pool({}, CONCURRENT_CONNECTIONS);
 
