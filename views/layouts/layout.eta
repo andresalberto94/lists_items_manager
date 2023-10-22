@@ -13,6 +13,8 @@
     </div>
   </body>
   <footer>
-    <%~ it.footer %>
+  <div class="container paper">
+      <%~ it.footer %>
+    </div>
   </footer>
 </html>
