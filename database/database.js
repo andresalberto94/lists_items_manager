@@ -1,7 +1,7 @@
 
 import { Pool } from "https://deno.land/x/postgres@v0.17.0/mod.ts";
 import { postgres } from "../deps.js";
-export { sql};
+
 let sql;
 if (Deno.env.get("DATABASE_URL")) {
   sql = postgres(Deno.env.get("DATABASE_URL"));
@@ -36,4 +36,4 @@ const executeQuery = async (query, params) => {
   return response;
 };
 
-export { executeQuery };
+export { executeQuery, sql};
