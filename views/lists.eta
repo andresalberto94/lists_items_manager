@@ -1,12 +1,12 @@
 <% layout("./layouts/layout.eta") %>
 <h1>Shopping List</h1>
 
-<% it.lists.forEach((list) => { %>
-<form action="/lists/list.id" method="POST">
+
+<form action="/lists/it.lists.id" method="POST">
 Name: <input type= "text" name="name" />
 <input type="submit" value="Create a List!"/>
 </form>
-<% }); %>
+
 
 
 <h2>Active Lists</h2>
