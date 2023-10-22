@@ -1,4 +1,5 @@
 <% layout("./layouts/layout.eta") %>
+<title>Shared shopping lists</title>
 
 <% it.listsNUM.forEach(function(num){ %>
     <% if (num.count === "0") { %>
