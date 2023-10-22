@@ -25,5 +25,6 @@ Name: <input type= "text" name="item" />
 <% }); %>
 </ul>
 
+<br>
 
 <a href="/lists">Shopping lists</a>
