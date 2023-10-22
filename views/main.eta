@@ -6,7 +6,7 @@
 <p>No Shopping lists yet.</p>
     <% } else { %>
   <title>Shared shopping lists</title>
-  h1>Statistics</h1>
+  <h1>Statistics</h1>
   <br>
   <h4>Number of Lists: <%= num.count %></h4>
   <% it.itemNUM.forEach(function(user){ %>
