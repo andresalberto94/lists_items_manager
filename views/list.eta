@@ -4,7 +4,7 @@
 <h1><%= it.list.name %></h1>
 
 <h2>Add an Item!</h2>
-<form action="/lists/<%= it.list.id %>" method="POST">
+<form action="/lists/<%= it.list.id/items %>" method="POST">
 Name: <input type= "text" name="item" />
 <input type="submit" value="Add Item!"/>
 </form>
