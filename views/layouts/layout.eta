@@ -12,4 +12,7 @@
       <%~ it.body %>
     </div>
   </body>
+  <footer>
+    <%~ it.footer %>
+  </footer>
 </html>

@@ -2,6 +2,13 @@
 <title>Shared shopping lists</title>
 <h1>Statistics</h1>
 
+<% it.listsNUM.forEach(function(num){ %>
+    <% if (num.count === "0") { %>
+<p>No lists yet.</p>
+    <% } else { %>
+  <h4>Number of Lists: <%= num.count %></h4>
+  <% } %>
+<% }) %>
 
 
 <% it.itemNUM.forEach(function(user){ %>
@@ -9,15 +16,6 @@
 <p>No items yet.</p>
     <% } else { %>
   <h4>Number of Items: <%= user.count %></h4>
-  <% } %>
-<% }) %>
-
-
-<% it.listsNUM.forEach(function(num){ %>
-    <% if (num.count === "0") { %>
-<p>No lists yet.</p>
-    <% } else { %>
-  <h4>Number of Lists: <%= num.count %></h4>
   <% } %>
 <% }) %>
 

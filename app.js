@@ -2,6 +2,7 @@ import { serve } from "./deps.js";
 import { configure } from "./deps.js";
 import * as listsController from "./controllers/listsControllers.js";
 import * as itemsController from "./controllers/itemsControllers.js";
+import * as mainController from "./controllers/mainControllers.js";
 
 
 configure({
@@ -11,14 +12,7 @@ configure({
 const handleRequest = async (request) => {
   const url = new URL(request.url);
 
-/*   if (url.pathname === "/lists" && request.method === "GET") {
-    return new Response(`Redirecting to /lists.`, {
-      status: 303,
-      headers: {
-        "Location": "/lists",
-      },
-    }); 
-  }*/
+  
   if (url.pathname === "/lists" && request.method === "POST") {
     return await listsController.addList(request);
   } else if (url.pathname === "/lists" && request.method === "GET") {
@@ -28,7 +22,7 @@ const handleRequest = async (request) => {
   } else if (url.pathname.match("lists/[0-9]+/desactive") && request.method === "POST") {
     return await listsController.desactive(request);
   } else if (url.pathname === "/" && request.method === "GET") {
-    return await listsController.main(request);
+    return await mainController.main(request);
   } else if (url.pathname.match("/lists/[0-9]+/items/[0-9]+/collect") && request.method === "POST") {
     return await itemsController.collected(request);
   } else if (url.pathname.match("/lists/[0-9]+/items") && request.method === "POST") {

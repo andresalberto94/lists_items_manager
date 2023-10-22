@@ -7,8 +7,6 @@ Name: <input type= "text" name="name" />
 </form>
 
 
-<a href="/">Main Page</a>
-
 <h2>Active Lists</h2>
 
 
@@ -22,3 +20,6 @@ Name: <input type= "text" name="name" />
   </li>
 <% }); %>
 </ul>
+
+
+<a href="/">Main Page</a>
