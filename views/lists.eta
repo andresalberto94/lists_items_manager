@@ -21,5 +21,6 @@ Name: <input type= "text" name="name" />
 <% }); %>
 </ul>
 
+<br>
 
 <a href="/">Main Page</a>
