@@ -51,7 +51,7 @@ const addList = async (request) => {
     const url = new URL(request.url);
     const urlParts = url.pathname.split("/");
     
-    await listService.desactivateList(urlParts[2]);
+    await listService.deactivateList(urlParts[2]);
   
     return redirectTo("/lists");
   };
