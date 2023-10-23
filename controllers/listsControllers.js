@@ -47,11 +47,11 @@ const addList = async (request) => {
   return new Response(await renderFile("list.eta", data3), responseDetails);
 };
 
-  const desactive = async (request) => {
+  const deactive = async (request) => {
     const url = new URL(request.url);
     const urlParts = url.pathname.split("/");
     
-    await listService.desactivateList(urlParts[2]);
+    await listService.deactivateList(urlParts[2]);
   
     return redirectTo("/lists");
   };
@@ -67,4 +67,4 @@ const addList = async (request) => {
 
   
 
-  export{addList,viewLists, desactive,findList, viewList}
+  export{addList,viewLists, deactive,findList, viewList}

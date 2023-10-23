@@ -9,7 +9,7 @@ const create = async (name) => {
     return await sql`SELECT * FROM shopping_lists WHERE active = true`;
   };
 
-  const desactivateList =async(id) =>{
+  const deactivateList =async(id) =>{
     return await sql`UPDATE shopping_lists SET active = false WHERE id = ${ id }`;
     
   };
@@ -26,4 +26,4 @@ const create = async (name) => {
   
 
   
-  export{create, findAllNonActiveList, findById, desactivateList}
+  export{create, findAllNonActiveList, findById, deactivateList}
