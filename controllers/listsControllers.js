@@ -47,7 +47,7 @@ const addList = async (request) => {
   return new Response(await renderFile("list.eta", data3), responseDetails);
 };
 
-  const desactive = async (request) => {
+  const deactive = async (request) => {
     const url = new URL(request.url);
     const urlParts = url.pathname.split("/");
     
