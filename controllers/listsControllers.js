@@ -67,4 +67,4 @@ const addList = async (request) => {
 
   
 
-  export{addList,viewLists, desactive,findList, viewList}
+  export{addList,viewLists, deactive,findList, viewList}
