@@ -13,7 +13,7 @@ const addItem = async (request) => {
   const url = new URL(request.url);
   const urlParts = url.pathname.split("/");
   const formData = await request.formData();
-  const name = formData.get("item");
+  const name = formData.get("name");
 
   await itemsService.createItem(urlParts[2],name);
 
