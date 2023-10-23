@@ -10,7 +10,7 @@
   <br>
   <h4>Shopping lists: <%= num.count %></h4>
   <% it.itemNUM.forEach(function(user){ %>
-  <h4>Shoppng list items: <%= user.count %></h4>
+  <h4>Shopping list items: <%= user.count %></h4>
   <% }) %>
   <% } %>
 <% }) %>
