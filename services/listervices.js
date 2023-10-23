@@ -26,4 +26,4 @@ const create = async (name) => {
   
 
   
-  export{create, findAllNonActiveList, findById, desactivateList}
+  export{create, findAllNonActiveList, findById, deactivateList}
